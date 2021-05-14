@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B28F1C2F2649BE8E00937451 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F1C2E2649BE8E00937451 /* MemoryGame.swift */; };
+		B28F1C312649C26B00937451 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F1C302649C26B00937451 /* EmojiMemoryGame.swift */; };
 		B2BD83F32647AD570095DCB3 /* Tricky_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD83F22647AD570095DCB3 /* Tricky_GameApp.swift */; };
 		B2BD83F52647AD570095DCB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD83F42647AD570095DCB3 /* ContentView.swift */; };
 		B2BD83F72647AD590095DCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BD83F62647AD590095DCB3 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B28F1C2E2649BE8E00937451 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		B28F1C302649C26B00937451 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		B2BD83EF2647AD570095DCB3 /* Tricky Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tricky Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BD83F22647AD570095DCB3 /* Tricky_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tricky_GameApp.swift; sourceTree = "<group>"; };
 		B2BD83F42647AD570095DCB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,8 +56,10 @@
 		B2BD83F12647AD570095DCB3 /* Tricky Game */ = {
 			isa = PBXGroup;
 			children = (
+				B2BD84012647B16B0095DCB3 /* View */,
+				B2BD84032647B1890095DCB3 /* ViewModel */,
+				B2BD84022647B17E0095DCB3 /* Model */,
 				B2BD83F22647AD570095DCB3 /* Tricky_GameApp.swift */,
-				B2BD83F42647AD570095DCB3 /* ContentView.swift */,
 				B2BD83F62647AD590095DCB3 /* Assets.xcassets */,
 				B2BD83FB2647AD590095DCB3 /* Info.plist */,
 				B2BD83F82647AD590095DCB3 /* Preview Content */,
@@ -67,6 +73,30 @@
 				B2BD83F92647AD590095DCB3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2BD84012647B16B0095DCB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2BD83F42647AD570095DCB3 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2BD84022647B17E0095DCB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28F1C2E2649BE8E00937451 /* MemoryGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2BD84032647B1890095DCB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B28F1C302649C26B00937451 /* EmojiMemoryGame.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,7 +134,7 @@
 				};
 			};
 			buildConfigurationList = B2BD83EA2647AD560095DCB3 /* Build configuration list for PBXProject "Tricky Game" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28F1C2F2649BE8E00937451 /* MemoryGame.swift in Sources */,
 				B2BD83F52647AD570095DCB3 /* ContentView.swift in Sources */,
 				B2BD83F32647AD570095DCB3 /* Tricky_GameApp.swift in Sources */,
+				B28F1C312649C26B00937451 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
